@@ -1,6 +1,6 @@
 module main
 
-go 1.15
+go 1.23
 
 replace utils => ./src/utils
 
@@ -13,14 +13,9 @@ replace controllers => ./src/controllers
 replace models => ./src/models
 
 require (
-	config v0.0.0
-	controllers v0.0.0
-	databaseutils v0.0.0
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
-	github.com/gorilla/mux v1.8.0 // indirect
-	github.com/lib/pq v1.9.0 // indirect
-	github.com/mediocregopher/radix/v3 v3.7.0 // indirect
-	gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b // indirect
-	models v0.0.0
-	utils v0.0.0
+	github.com/gorilla/sessions v1.4.0
+	github.com/gorilla/websocket v1.5.3
+	github.com/lib/pq v1.9.0
 )
+
+require github.com/gorilla/securecookie v1.1.2 // indirect
